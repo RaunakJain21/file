@@ -9,13 +9,16 @@ const port=3000;
 // middleware add krne ha
 const fileUpload = require('express-fileupload');
 app.use(express.json());
-app.use(fileUpload);
+app.use(fileUpload({
+  useTempFiles : true,
+  // tempFileDir : '/tmp/'
+}));
 
 // db connect
 const dbConnect = require('./config/database');
 dbConnect();
 
-// cloud connect
+// // cloud connect
 const cloudinary=require('./config/cloudinary');
 cloudinary.cloudinaryConnect();
 
