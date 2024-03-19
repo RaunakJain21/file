@@ -1,0 +1,19 @@
+{
+  "name": "xyz",
+  "version": "1.0.0",
+  "description": "practice on how to upload a file to cloudinary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^2.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-fileupload": "^1.5.0",
+    "mongoose": "^8.2.2",
+    "mongose": "^0.0.2-security"
+  }
+}
